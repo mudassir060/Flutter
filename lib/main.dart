@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:test/Dialog/bootomsheet.dart';
 import 'package:test/Dialog/getx.dart';
+import 'package:test/Router/GetRoutUnNamed.dart';
 
 import 'Snackbar/gitx.dart';
 
@@ -21,14 +22,15 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Scaffold(
-          body: Center(
-            child: 
-             ElevatedButton(
-              onPressed: Bottom_Sheet,
-              child: const Text("Press"),
-            ),
-          ),
+        home: const Scaffold(
+          body: GetRoutUnNamed()
+          // Center(
+          //   child: 
+          //    ElevatedButton(
+          //     onPressed: Bottom_Sheet,
+          //     child: const Text("Press"),
+          //   ),
+          // ),
         ),
       ),
     );
