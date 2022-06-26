@@ -19,6 +19,7 @@ class Home extends StatelessWidget {
             children: [
               Text("Home"),
               Text("${Get.arguments}"),
+              Text("${Get.parameters["someValue"]}"),
                ElevatedButton(
                 onPressed: () {
                   Get.back();

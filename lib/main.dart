@@ -4,6 +4,7 @@ import 'package:test/Dialog/bootomsheet.dart';
 import 'package:test/Dialog/getx.dart';
 import 'package:test/Router/GetRoutUnNamed.dart';
 
+import 'Router/GetRoutNamed.dart';
 import 'Snackbar/gitx.dart';
 
 void main() {
@@ -17,13 +18,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: GetMaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
+      // home: GetMaterialApp(
+      //   title: 'Flutter Demo',
+      //   theme: ThemeData(
+      //     primarySwatch: Colors.blue,
+      //   ),
         home: const Scaffold(
-          body: GetRoutUnNamed()
+          body: GetRoutNamed()
           // Center(
           //   child: 
           //    ElevatedButton(
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
           //   ),
           // ),
         ),
-      ),
+      // ),
     );
   }
 }
